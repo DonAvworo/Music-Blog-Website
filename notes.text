@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------
+To fire up the server, run the following command to start mysql:
+=========================================================================
+ * mysql -u root -p or mysql -u root (if you have no password prompt for it) 
+    * source db/schema.sql to create the db and tables (where db is the folder of the schema.sql file)
+        * quit
+
+=========================================================================
+To run the seed script and start the server:
+=========================================================================
+ * npm run seed
+    * npm start
+
+
+"dependencies": 
+    "bcrypt": "^5.0.0",                     // bcrypt is used for hashing passwords
+    "body-parser": "^1.20.0",               // body-parser is used to parse the body of incoming requests
+    "connect-session-sequelize": "^7.0.4",  // connect-session-sequelize is used to manage sessions
+    "dotenv": "^8.2.0",                     // dotenv is used to read environment variables
+    "ejs": "^3.1.8",                        // ejs is used to render the html pages
+    "express": "^4.18.1",                   // express is used to create the server
+    "express-handlebars": "^5.2.0",         // express-handlebars is used to render the html pages
+    "express-session": "^1.17.1",           // express-session is used to manage sessions
+    "handlebars": "^4.7.7",                 // handlebars is used to render the html pages
+    "multer": "^1.4.5-lts.1",               // multer is used to upload files
+    "mysql2": "^2.2.5",                     // mysql2 is used to connect to the database
+    "nodemon": "^2.0.16",                   // nodemon is used to restart the server when changes are made
+    "path": "^0.12.7",                      // path is used to find the files
+    "sequelize": "^6.3.5",                  // sequelize is used to connect to the database
+    "sharp": "^0.30.6",                     // sharp is used to resize images
+    "uuid": "^8.3.2",                       // uuid is used to generate unique ids
+    "uuidv4": "^6.2.13"                     // uuidv4 is used to generate unique ids
