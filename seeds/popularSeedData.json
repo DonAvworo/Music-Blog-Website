@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Logic Pro X vs Pro Tools",
+        "content": "I have used both Pro Tools and Logic Pro X and the differece between both of ",
+        "image": "css2.jfif",
+        "author_id": 4,
+        "category_id": 3,
+        "created_at": "2020-01-01 00:00:00",
+        "likes": 25,
+        "dislikes": 2,
+        "comments": ""
+    },
+
+    {
+        "title": "CSS IN 2022",
+        "content": "Newset CSS features are coming in the future. This is a list of the features that will be available in the future.",
+        "image": "css2.jfif",
+        "author_id": 4,
+        "category_id": 3,
+        "created_at": "2020-01-01 00:00:00",
+        "likes": 25,
+        "dislikes": 2,
+        "comments": ""
+    },
+
+    {
+        "title": "Learn to code in 24 hours",
+        "content": "No really, if you read this you will be coding in less than 24 hours!",
+        "image": "how to code.jfif",
+        "author_id": 2,
+        "category_id": 3,
+        "created_at": "2021-01-01 07:01:07",
+        "likes": 21,
+        "dislikes": 2,
+        "comments": ""
+            
+    },
+
+    {
+        "title": "Learn SQL",
+        "content": "The definitive guide to SQL, the world's most used language for data storage and data manipulation.",
+        "image": "sql2.png",
+        "author_id": 3,
+        "category_id": 3,
+        "created_at": "2019-06-03 12:11:00",
+        "likes": 16,
+        "dislikes": 5,
+        "comments": ""
+            
+    }
+
+]

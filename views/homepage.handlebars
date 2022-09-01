@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="leftcolumn">
+
+        {{#each posts as |post|}} 
+        <div class="card">
+            <h2>{{post.title}}</h2>
+            <h5>{{post.created_at}}</h5>
+            <img class="banner" src="./assets/images/{{post.image}}">
+            <p>{{post.content}}</p>
+            <a href="/post/{{post.id}}">READ MORE</a>
+        </div>
+        {{/each}}
+    </div>
+    <div class="rightcolumn">
+
+        <div class="card">
+            <h2>About Us</h2>
+            <img src="./assets/images/autor.jfif" Image</div>
+            <p>Welcome to Music Blog. This is a place where you can find the latest news about music technologies.</p>
+            </p>
+        </div>
+
+        <h3>Read our most popular blogs.</h3>
+        {{#each popularPosts as |popularPost|}}
+        <div class="card">
+            <h4>{{popularPost.title}}</h2>
+                <h5>{{popularPost.created_at}}</h5>
+                <img class="banner" src="./assets/images/{{popularPost.image}}">
+                <p>{{popularPost.content}}</p>
+                <a href="/post/{{popularPost.id}}">READ MORE</a>
+        </div>
+        {{/each}}
+
+    </div>
+</div>

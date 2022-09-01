@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2-Blog</title>
+    <!-- import fontawesome from fontawesome.com -->
+    <fontawesome-cdn>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/signup.css">
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h2>Coders World</h2>
+      <img class="logo" src="../assets/images/logo.png" alt="website logo">
+    </div>
+
+    <!-- <div>
+      <img class="logo" src="../assets/images/logo.png" alt="website logo">
+    </div> -->
+    <br>
+
+    <button class="postBtn" type="button"><h3>Click here to submit a new article!</h3></button>
+    <!-- <br> -->
+    <!-- <button class="signUpHomeBtn" onclick="document.getElementById('id01').style.display='block'" style="width:100%;"><h3> Click here to sign up</h3></button> -->
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="" method="post" id="signUp">
+          <div class="container">
+
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter desired username" id="username" required>
+            <label class="input-box" for="email"><b>Email</b></label>
+            <input type="text" id="email" placeholder="Enter Email" name="email" required>
+      
+
+            <label class="input-box" for="psw"><b>Password</b></label>
+            <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+      
+
+            <label class="input-box" for="pswrepeat"><b>Repeat Password</b></label>
+            <input type="password" id="pswrepeat" placeholder="Repeat Password" name="pswrepeat" required>
+      
+      
+            <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+
+          </div>
+        </form>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+
+        <a href="#"> 
+          <div class="card">
+            <h2>Best Paying Programming Languages</h2>
+            <h5>Featured Article 1: Find your next coding job!: Dec 7, 2017 </h5>
+            <img class="banner" src="../assets/images/lanuguages.jpg" >
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="card">
+            <h2>Javascript for Dummies</h2>
+            <h5>Dec 7, 2017 :Learn to code with JS quickly!: Sep 2, 2017</h5>
+            <img class="banner" src="../assets/images/jsimg.png" >
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.Doler wither fait sit laborum consectetur adipiscing elit, sed do  </p>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Us</h2>
+          <img src="../assets/images/autor.jfif"Image>
+          <p>Welcome to the  Coder's World Community. We love coding.Feel free to submit your article for review.</p>
+        </div>
+    
+        <div class="card">
+          <h3>Read our most popular blogs.</h3>
+          <a href="#">CSS IN 2022<img class="minibanner" src="../assets/images/css2.jfif"><br></a>
+          <a href="#">Learn to code in 24 hours<img class="minibanner" src="../assets/images/how to code.jfif"><br></a>
+          <a href="#">Learn SQL<img class="minibanner" src="../assets/images/sql2.png"><br></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+     <h2>Conect with us below!</h2>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </nav>
+    </div>
+
+    <script src="./assets/javascript/signup.js"></script>
+  </body>
+  
+</html>

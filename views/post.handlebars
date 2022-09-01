@@ -1,0 +1,28 @@
+<h2>{{title}} </h2>
+<h5>{{user.name}}</h5>
+
+<h5>{{created_at}}</h5>
+<img class="banner" src="/assets/images/{{image}}">
+<p>{{content}}</p>
+<p>{{likes}}</p>
+<p>{{dislikes}}</p>
+<p>{{comments}}</p>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .fa {
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .fa:hover {
+    color: darkblue;
+  }
+</style>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>Leave a like or dislike
+
+<form class="commentField" action="/comment">
+  <h4>Leave comment below</h4>
+  <textarea id="commentField" name="commentField" cols="50" rows="10"></textarea>

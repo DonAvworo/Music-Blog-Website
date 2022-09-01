@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Mixing Techniques",
+        "content": "There is no single mixing technique that is universally accepted. Mixing techniques or the engineers approaches the manipulation of single or multi-tracks is dependent on what the engineer is trying to achieve",
+        "image": "languages.jpg",
+        "author_id": 1,
+        "category_id": 2,
+        "likes": 6,
+        "dislikes": 2,
+        "comments": ""
+    },
+    {
+        "title": "Javascript for Dummies",
+        "content": "Master your language with lessons, quizzes, and projects designed for real-life scenarios. Take your skills to a new level and join millions of users that have learned Javascript.",
+        "image": "jsimg.png",
+        "author_id": 2,
+        "category_id": 3,
+        "likes": 9,
+        "dislikes": 3,
+        "comments": ""
+    },
+    {
+        "title": "How to write an awesome full stack web aplication",
+        "content": "Understanding the market demand for full-stack web app development, here we have created an article to show you how to combine the basic knowledge of these technologies in both to create a full-stack web app ready for deployment.",
+        "image": "full-stack.jpeg",
+        "author_id": 1,
+        "category_id": 3,
+        "likes": 8,
+        "dislikes": 6,
+        "comments": ""
+    },
+    {
+        "title": "Web App vs Mobile App",
+        "content": "If you're planning to establish a mobile presence for your business or organization one of the first considerations that will likely come to mind is whether you want to create a mobile application for users to download (app) or a mobile website, or perhaps both.",
+        "image": "mob-vs-web.jpeg",
+        "author_id": 2,
+        "category_id": 3,
+        "likes": 11,
+        "dislikes": 3,
+        "comments": ""
+    }
+]

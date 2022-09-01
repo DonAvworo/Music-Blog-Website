@@ -1,17 +1,90 @@
 -------------------------------------------------------------------------
 To fire up the server, run the following command to start mysql:
-=========================================================================
+========================================================================
  * mysql -u root -p or mysql -u root (if you have no password prompt for it) 
     * source db/schema.sql to create the db and tables (where db is the folder of the schema.sql file)
         * quit
 
-=========================================================================
+================================================================================
 To run the seed script and start the server:
-=========================================================================
+================================================================================
  * npm run seed
     * npm start
 
+---------------------------------------------------------------------------------
+=================================================================================
+FOLDER STRUCTURE
+=================================================================================
 
+Config folder:
+    * connection.js - contains the connection confiuration for the database
+
+Controllers folder:
+    api folder contains the the js files for the api routes
+        * index.js - contains the main controller/api route for the server
+        * users-route.js - contains the user controller/api route for the server
+        * posts-route.js - contains the post controller/api route for the server
+    home-route.js - contains the home controller/api route for the server
+    index.js - contains all the controllers for the server so it requires all the 
+    controllers in the controllers folder
+db folder:
+    * schema.sql - contains the sql commands to create the database and tables
+
+Models folder:
+    * user.js - contains the user model where the user schema is defined. 
+    It holds the user schema data including
+        - the user schema
+            - id - the id of the user
+            - username - the username of the user
+            - password - the password of the user
+            - email - the email of the user
+            - createdAt - the date the user was created
+            - updatedAt - the date the user was updated
+        - User password hashing and validation methods are defined in this file
+            - comparePassword - compares the password of the user with the password in the database
+            - hashPassword - hashes the password of the user
+            - validatePassword - validates the password of the user
+        - hooks for the user model
+            - beforeCreate - hashes the password of the user before it is created in the database
+            - beforeUpdate - hashes the password of the user before it is updated in the database
+        - sequelise - the sequelize instance for the user model (sequelize.define). the sequelize is used to automatically create the user model in the database
+            - define - creates the user model in the database
+            - sync - synchronizes the user model with the database
+            - drop - drops the user model from the database
+            - dropAllTables - drops all the tables in the database
+            - dropAll - drops all the tables and the user model from the database
+            - syncAndDrop - synchronizes the user model with the database and drops the user model from the database
+            - syncAndDropAllTables - synchronizes the user model with the database and drops all the tables from the database
+            - syncAndDropAll - synchronizes the user model with the database and drops all the tables and the user model from the database
+            - dropTable - drops the table from the database
+            - dropAllTables - drops all the tables from the database
+            - dropAll - drops all the tables and the user model from the database
+            - syncAndDropTable - synchronizes the user model with the database and drops the table from the database
+            - syncAndDropAllTables - synchronizes the user model with the database and drops all the tables from the database
+            - syncAndDropAll - synchronizes the user model with the database and drops all the tables and the user model from the database
+            - dropTable - drops the table from the database
+            - dropAllTables - drops all the tables from the database
+            - dropAll - drops all the tables and the user model from the database
+            - syncAndDropTable - synchronizes the user model with the database and drops the table from the database
+            - syncAndDropAllTables - synchronizes the user model with the database and drops all the tables from the database
+            - syncAndDropAll - synchronizes the user model with the database and drops all the tables and the user model from the database
+            - dropTable - drops the table from the database
+            - dropAllTables - drops all the tables from the database
+            - dropAll - drops all the tables and the user model from the database
+            - syncAndDropTable - synchronizes the user model with the database and drops the table from the database
+            - syncAndDropAllTables - synchronizes the user model with the database and drops all the tables from the database
+            - syncAndDropAll - synchronizes the user model with
+             
+    *Post.js - contains the post model where the post schema is defined.
+    It holds the post schema data including
+        - the post schema
+            - id - the id of the post
+            - title - the title of the post
+            - body - the body of the post
+            - userId - the id of the user who created the post
+            - createdAt - the date the post was created
+            - updatedAt - the date the post was updated
+      
 "dependencies": 
     "bcrypt": "^5.0.0",                     // bcrypt is used for hashing passwords
     "body-parser": "^1.20.0",               // body-parser is used to parse the body of incoming requests
@@ -30,3 +103,5 @@ To run the seed script and start the server:
     "sharp": "^0.30.6",                     // sharp is used to resize images
     "uuid": "^8.3.2",                       // uuid is used to generate unique ids
     "uuidv4": "^6.2.13"                     // uuidv4 is used to generate unique ids
+
+
